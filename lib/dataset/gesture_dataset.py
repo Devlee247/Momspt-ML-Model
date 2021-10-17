@@ -7,7 +7,6 @@ class GestureDataset(Dataset):
         self.mode = mode
 
         df = pd.read_csv(csvpath)
-        print(df.shape)
         if self.mode == 'train':
             df = df.dropna()
             self.input = df.iloc[:,2:].values
