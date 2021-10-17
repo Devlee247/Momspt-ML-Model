@@ -1,0 +1,8 @@
+DATASET_DIR: 'data/processed/smpl_csvs_out.csv'
+DEVICE: 'cuda'
+TRAIN:
+  BATCH_SIZE: 128
+  EPOCHS: 100
+  GEN_OPTIM: 'sgd'
+  GEN_LR: 0.001
+  PRETRAINED: 'models/checkpoint.pth.tar'
